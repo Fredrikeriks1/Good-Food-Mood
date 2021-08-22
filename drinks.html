@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search drinks | Good Food Mood</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="bgimage">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <h1>Good Food Mood</h1>
+          <p>Best way to find your favorite recipes</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/gfm/index.html?#">GFM</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="/index.html?#">Home</a></li>
+            <li><a href="/search.html?#">Search recipes</a></li>
+            <li class="active"><a href="/drinks.html?#">Drinks</a></li>
+            <li><a href="/contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid text-center">
+      <h2></h2>
+      <p>Search for your preferred drink</p>
+      <p><i>Ex. Mojito, Vodka, Whiskey...</i></p>
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <form class="mysearch">
+            <input id="search" type="text" placeholder="Search.." />
+            <button type="submit" id="submitsearch" onclick="show()">
+              <i class="fa fa-search"></i>
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <table id="recipe"></table>
+    </div>
+    <br /><br />
+    <footer class="container-fluid text-center">
+      <p>Want more food inspiraton? Sign up for our weekly newsletter</p>
+      <form class="form-inline">
+        <input
+          type="email"
+          class="form-control"
+          size="50"
+          placeholder="Email Address"
+        />
+        <button type="button" class="btn btn-danger" style="margin-top: 1px">
+          Sign Up
+        </button>
+      </form>
+      <p style="margin-top: 10px">All rights reserved 2021</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
