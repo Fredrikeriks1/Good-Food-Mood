@@ -31,7 +31,7 @@ async function show() {
     tab += `<div class="container col-sm-4 panel panel-primary text-center"> 
     <h3 class="panel-heading">${r.recipe.label} </h3>
 
-    <a href="${r.recipe.uri}"><img src="${r.recipe.image}" class="img-responsive"  style="max width:100%;"/> </a>       
+    <a href="${r.recipe.url}"><img src="${r.recipe.image}" class="img-responsive"  style="max width:100%;"/> </a>       
 </div>`;
   }
 
